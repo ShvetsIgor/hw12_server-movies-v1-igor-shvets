@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "a6b7a2a4-d3b6-49cf-9282-5622b6438fcf",
+		"name": "Movies Mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49499944",
+		"_collection_link": "https://www.postman.com/shvetsigor-258001/workspace/tel-ran-back-end/collection/49499944-a6b7a2a4-d3b6-49cf-9282-5622b6438fcf?action=share&source=collection_link&creator=49499944"
+	},
+	"item": [
+		{
+			"name": "byRussian",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"title\": \"1984\",\r\n            \"author\": \"George Orwell\",\r\n            \"genre\": \"dystopia\",\r\n            \"year\": 1949\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3050/movies/russian",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"movies",
+						"russian"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byGenres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3050/movies/byGenres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"movies",
+						"byGenres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byImdbTomatoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3050/movies/imdb-tomatoes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"movies",
+						"imdb-tomatoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2010-imdb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3050/movies/2010-imdb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"movies",
+						"2010-imdb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "two-top-awards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3050/movies/two-top-awards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"movies",
+						"two-top-awards"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
