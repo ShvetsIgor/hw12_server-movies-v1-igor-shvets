@@ -21,6 +21,22 @@ export class MoviesController {
 
     }
 
+    getMoviesByImdbLessThanTomatoesRating = async (req: Request, res: Response) => {
+
+    const movies: Movie[] = await this.service.getImdbLessThanTomatoesRating();
+    res.status(200).json(movies);
+    }
+
+    getMovies2010MoviesGroupedByImdbRating = async (req: Request, res: Response) => {
+        const movies = await this.service.get2010MoviesGroupedByImdbRating();
+        res.status(200).json(movies);
+    }
+
+    getTitlesOfTwoTopAwardedMovies = async (req: Request, res: Response) => {
+        const titles = await this.service.getTitlesOfTwoTopAwardedMovies();
+        res.status(200).json(titles);
+    }
+
 }
 
 export const moviesController = new MoviesController();
